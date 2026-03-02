@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="mainMenuPage">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="spacing">
+         <number>7</number>
+        </property>
+        <property name="bottomMargin">
+         <number>30</number>
+        </property>
+        <item alignment="Qt::AlignmentFlag::AlignHCenter">
+         <widget class="QLabel" name="welcomeLabel">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Welcome to Life After School App!</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="menuLabel">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Main Menu</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="exitButton">
+          <property name="text">
+           <string>EXIT</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="fileLabel">
+          <property name="font">
+           <font>
+            <pointsize>11</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Choose a file type for the user's list of events:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="CSVButton">
+          <property name="text">
+           <string>CSV</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="HTMLButton">
+          <property name="text">
+           <string>HTML</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="modeLabel">
+          <property name="font">
+           <font>
+            <pointsize>11</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Choose app mode:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="adminButton">
+          <property name="text">
+           <string>ADMIN</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="userButton">
+          <property name="text">
+           <string>USER</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="chartButton">
+          <property name="text">
+           <string>CHART DATA</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="adminPage">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item alignment="Qt::AlignmentFlag::AlignHCenter">
+         <widget class="QLabel" name="adminLabel">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>28</pointsize>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Admin Menu</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="addButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Add New Event</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="removeButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Remove Event</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="updateButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Update Existing Event</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="viewButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>View All Existing Events</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="viewTableButton">
+          <property name="text">
+           <string>View Table</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="undoButton">
+          <property name="text">
+           <string>Undo</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="redoButton">
+          <property name="text">
+           <string>Redo</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="adminBackButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Back To Main Menu</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="userPage">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item alignment="Qt::AlignmentFlag::AlignHCenter">
+         <widget class="QLabel" name="userLabel">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>28</pointsize>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>User Menu</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="viewAllButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>View Events</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="userRemoveButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Remove Event</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="viewUserListButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>See My List of Events</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="openListButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Open List</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="userBackButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Back To Main Menu</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="adminAddPage">
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLabel" name="AddTitleLabel">
+          <property name="font">
+           <font>
+            <pointsize>28</pointsize>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Add Event</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="titleLabel">
+          <property name="text">
+           <string>Enter Title:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="titleBox"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="descriptionLabel">
+          <property name="text">
+           <string>Enter Description:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="descriptionBox"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="dateTimeLabel">
+          <property name="text">
+           <string>Enter the Date and the Time of the Event:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateTimeEdit" name="dateTimeBox"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="peopleLabel">
+          <property name="text">
+           <string>Enter the number of people:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="peopleBox">
+          <property name="maximum">
+           <number>10000</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="linkLabel">
+          <property name="text">
+           <string>Enter link of the Event:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="linkBox"/>
+        </item>
+        <item alignment="Qt::AlignmentFlag::AlignRight">
+         <widget class="QPushButton" name="submitAddButton">
+          <property name="text">
+           <string>ADD</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="adminRemovePage">
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QLabel" name="removeTitleLabel">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>28</pointsize>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Remove Event</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="removeLabel">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Enter title of the event you want to remove:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="titleToRemoveBox"/>
+        </item>
+        <item alignment="Qt::AlignmentFlag::AlignRight">
+         <widget class="QPushButton" name="submitRemoveButton">
+          <property name="text">
+           <string>REMOVE</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="adminUpdatePage">
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QLabel" name="updateTitleLabel">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>28</pointsize>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Update Event</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="up_titleLabel">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Enter title of the Event you want to update:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="up_titleBox"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="up_emptyLabel">
+          <property name="text">
+           <string>(Leave empty the fields you don't want to update)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="up_descriptionLabel">
+          <property name="text">
+           <string>New Description:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="up_descriptionBox"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="up_dateLabel">
+          <property name="text">
+           <string>New Date:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="up_dateBox"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="up_timeLabel">
+          <property name="text">
+           <string>New Time:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="up_timeBox"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="up_peopleLabel">
+          <property name="text">
+           <string>New number of people:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="up_peopleBox">
+          <property name="maximum">
+           <number>5000</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="up_linkLabel">
+          <property name="text">
+           <string>New Link:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="up_linkBox"/>
+        </item>
+        <item alignment="Qt::AlignmentFlag::AlignRight">
+         <widget class="QPushButton" name="submitUpdateButton">
+          <property name="text">
+           <string>UPDATE</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="adminViewPage">
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item alignment="Qt::AlignmentFlag::AlignHCenter">
+         <widget class="QLabel" name="viewTitleLabel">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>28</pointsize>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>View all Events</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="viewTable">
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustIgnored</enum>
+          </property>
+          <property name="columnCount">
+           <number>6</number>
+          </property>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignmentFlag::AlignRight">
+         <widget class="QPushButton" name="adminViewBackButton">
+          <property name="text">
+           <string>Back</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="userViewPage">
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QLabel" name="userViewPageTitle">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>28</pointsize>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>View Events</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="enterMonthLabel">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>View events only for a specific month (leave empty if you want to see all):</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="monthBox">
+          <property name="minimum">
+           <number>0</number>
+          </property>
+          <property name="maximum">
+           <number>12</number>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignmentFlag::AlignRight">
+         <widget class="QPushButton" name="submitMonthButton">
+          <property name="text">
+           <string>ENTER</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="userViewTable">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustToContents</enum>
+          </property>
+          <property name="autoScroll">
+           <bool>true</bool>
+          </property>
+          <property name="rowCount">
+           <number>1</number>
+          </property>
+          <property name="columnCount">
+           <number>6</number>
+          </property>
+          <attribute name="verticalHeaderHighlightSections">
+           <bool>true</bool>
+          </attribute>
+          <row/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="userIfAddLabel">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Do you want to add this event to your list?</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignmentFlag::AlignVCenter">
+         <widget class="QPushButton" name="userAddButton">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>YES</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Go to another event:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="previousEventButton">
+          <property name="text">
+           <string>PREVIOUS</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="nextEventButton">
+          <property name="text">
+           <string>NEXT</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignmentFlag::AlignRight">
+         <widget class="QPushButton" name="userViewBackButton">
+          <property name="text">
+           <string>BACK TO MENU</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="userRemovePage">
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item alignment="Qt::AlignmentFlag::AlignHCenter">
+         <widget class="QLabel" name="userRemovePageTitle">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>28</pointsize>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Remove Event</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="enterTitleLabel">
+          <property name="maximumSize">
+           <size>
+            <width>16777209</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <italic>false</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Enter title to remove:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="userTitleToRemoveBox"/>
+        </item>
+        <item alignment="Qt::AlignmentFlag::AlignRight">
+         <widget class="QPushButton" name="userSubmitRemoveButton">
+          <property name="text">
+           <string>REMOVE</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="userViewMyListPage">
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item alignment="Qt::AlignmentFlag::AlignHCenter">
+         <widget class="QLabel" name="viewMyListTitle">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>28</pointsize>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>View My List of Events</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="userListTable">
+          <property name="columnCount">
+           <number>6</number>
+          </property>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignmentFlag::AlignRight">
+         <widget class="QPushButton" name="userListBackButton">
+          <property name="text">
+           <string>BACK</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="chartPage">
+       <widget class="ChartWidget" name="chartWidget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>650</width>
+          <height>500</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>500</width>
+          <height>500</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="chartBackButton">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>530</y>
+          <width>83</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>BACK</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ChartWidget</class>
+   <extends>QWidget</extends>
+   <header>chartwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

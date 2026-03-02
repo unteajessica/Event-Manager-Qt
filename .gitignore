@@ -1,0 +1,19 @@
+# Qt / build
+.qmake.stash
+*.pro.user
+ui_*.h
+
+# Visual Studio
+.vs/
+*.vcxproj*
+*.qtvscr
+CppProperties.json
+
+# Build folders
+build/
+Debug/
+Release/
+x64/
+
+# Generated files
+*.html
